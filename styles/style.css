@@ -1,7 +1,7 @@
 /* Estilo de la página */
 
 @font-face {
-  font-family: FutbolLetras; /*Nombre que yo quiera*/
+  font-family: FutbolLetras; 
   src: url(../fonts/Sharpshooter.otf);
 }
 
@@ -62,9 +62,9 @@ body {
 
 #home {
   background-image: url("../images/Fondo.jpg");
-  background-size: cover; /*Estira la imagen*/
+  background-size: cover; 
   background-position: center center;
-  background-attachment: fixed; /*Para posicionar la imagen*/
+  background-attachment: fixed; 
 }
 
 .hero {
@@ -112,12 +112,13 @@ body {
 }
 
 #calltoaction {
-  padding: 10px;
+  text-decoration: underline;
+  text-decoration-color: #fff;
   width: 100%;
   align-self: center;
   font-family: "FutbolLetras";
   font-size: 2em;
-  text-transform: uppercase; /* pone texto en mayúsculas */
+  text-transform: uppercase; 
    }
 
 
@@ -139,7 +140,7 @@ body {
   color: white;
   padding: 2% 8% 8% 8%;
   text-align: justify;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #ff0000;
 }
 
 #introduccion h1 {
@@ -173,13 +174,13 @@ body {
 #Plantilla p:first-letter {font-size:1.8em;
                  color:#ec1515;}
 
-.mitad {box-sizing:border-box;  /*** OJO: PARA QUE EL PADDING Y EL BORDE CUENTE DENTRO DEL WIDTH ***/ 
+.mitad {box-sizing:border-box;
 width:50%;
 float:left;
 padding:2%;
 }
 
-.resetear {clear:both;} /* deja de apilar cualquier cosa que tenga detrás */
+.resetear {clear:both;} 
 
 #izqda {
 padding:30px 2%;}
@@ -187,8 +188,8 @@ padding:30px 2%;}
 
 #plantilla {width:75%;
 padding-top: 25px;
-padding-bottom: 25px; /****** del bloque en el que está contenida la imagen ******/
-display:block;  /****** para poder centrar la imagen en su columna *******/
+padding-bottom: 25px; 
+display:block; 
 margin:auto;}
 
 /**********************************************************************************************/
@@ -239,7 +240,8 @@ margin:auto;}
 
 /***********************************************************/
 
-#Footer {padding:30px 10%;}
+#Footer {padding:30px 10%;
+         background-color: rgb(172, 169, 169);}
 
 .accordion {
   background-color: #eee;
@@ -267,10 +269,7 @@ margin:auto;}
   overflow: hidden;
 }
 
-h1, p {color:white}
-h1 {font-family:"FutbolLetras";
-    font-size:2em;
-    text-align:center;}
+p {color:white}
 
 /************************************************************/
 
