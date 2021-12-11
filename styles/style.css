@@ -1,0 +1,283 @@
+/* Estilo de la página */
+
+@font-face {
+  font-family: FutbolLetras; /*Nombre que yo quiera*/
+  src: url(../fonts/Sharpshooter.otf);
+}
+
+html {scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+/******************************************************************************/
+
+#navegador {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+#menu {overflow: hidden;
+  background-color: #333;
+  }
+#menu a {float: left;
+  display: block;
+  color: #EBF7E3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.7em;
+  }
+
+@media screen and (max-width: 600px) {
+  .menu a:not(:first-child) {
+    display: none;
+  }
+  .menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu.responsive {
+    position: relative;
+  }
+  .menu.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*****************************************************************************/
+
+#home {
+  background-image: url("../images/Fondo.jpg");
+  background-size: cover; /*Estira la imagen*/
+  background-position: center center;
+  background-attachment: fixed; /*Para posicionar la imagen*/
+}
+
+.hero {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.inner {
+  min-height: 1000px;
+  position: relative;
+}
+
+.hero .inner {
+  background: rgba(0, 0, 0, 0.7)
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAAD0lEQVQIW2NkQABjRmQOAAM+AGkQsDBSAAAAAElFTkSuQmCC)
+    repeat;
+}
+
+.copy {
+  position: absolute;
+  top: 50%;
+  height: 7em;
+  margin-top: -5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+}
+
+.hero h1 {
+  margin: 0;
+  font-family: "FutbolLetras";
+  font-weight: 400;
+  font-size: 270%;
+  padding: 20px;
+  border: 10px solid #fff;
+  box-sizing: border-box;
+  align-self: center;
+}
+
+#calltoaction {
+  padding: 10px;
+  width: 100%;
+  align-self: center;
+  font-family: "FutbolLetras";
+  font-size: 2em;
+  text-transform: uppercase; /* pone texto en mayúsculas */
+   }
+
+
+#calltoaction:hover {
+        cursor:pointer;}
+
+.fa-arrow-circle-o-up {position:fixed;
+  bottom:20px;
+  right:20px;
+  color:white;
+  border:3px solid white;
+  padding:10px;
+  border-radius:50%;}
+
+/************************************************************************************************/
+
+#introduccion {
+  font-family: "FutbolLetras";
+  color: white;
+  padding: 8%;
+  text-align: justify;
+  border-bottom: 2px solid #ffffff;
+}
+
+#introduccion h1 {
+  font-family: FutbolLetras;
+  text-align: center;
+  font-size: 2em;
+}
+
+#escudo {
+  width: 50%;
+  float: left;
+  margin: 15px;
+}
+
+#introduccion p:first-letter {
+  font-size: 1.8em;
+  color: #ff0000;
+}
+
+/************************************************************************************************/
+
+#Plantilla {font-family: "FutbolLetras";
+  color:white;
+  border-bottom: 2px solid #f50a0a;}
+
+#Plantilla h1 {font-family: runas;
+     font-size:2em;
+     text-align:center;}
+
+#Plantilla p:first-letter {font-size:1.8em;
+                 color:#ec1515;}
+
+.mitad {box-sizing:border-box;  /*** OJO: PARA QUE EL PADDING Y EL BORDE CUENTE DENTRO DEL WIDTH ***/ 
+width:50%;
+float:left;
+padding:2%;
+}
+
+.resetear {clear:both;} /* deja de apilar cualquier cosa que tenga detrás */
+
+#izqda {
+padding:30px 2%;}
+
+
+#plantilla {width:75%; /****** del bloque en el que está contenida la imagen ******/
+display:block;  /****** para poder centrar la imagen en su columna *******/
+margin:auto;}
+
+/**********************************************************************************************/
+
+#Temporada {font-family: "FutbolLetras";
+  color:white;
+  border-bottom: 2px solid #f50a0a;
+  }
+
+#Temporada h1 {font-family: runas;
+     font-size:2em;
+     text-align:center;}
+
+#Temporada p:first-letter {font-size:1.8em;
+                 color:#ec1515;
+                 }
+          
+#Temporada p {padding: 0% 25%;}
+
+#temporada {width:25%; 
+            display:block;  
+            margin:auto;}
+/************************************************************************************************/
+
+#Gallery h1 {font-family: runas;
+  text-align:center;
+  font-size: 2em;
+  color:white;
+  padding:30px 0;}
+
+.cuarto {width:23%;
+  margin:1%;
+  padding:2%;
+  float:left;
+  box-sizing:border-box;
+  border:1px solid #ff0000;}
+
+.cuarto img {width:100%;
+      opacity:0.5;}
+
+.cuarto img:hover {opacity:1;}
+
+.cuarto h2 {font-family: runas;
+     color:white;
+     text-align:center;}
+
+/***********************************************************/
+
+#Footer {padding:30px 10%;}
+
+.accordion {
+  background-color: #eee;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-family: FutbolLetras;
+}
+
+.active, .accordion:hover {
+  background-color: #e71a1a;; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: rgb(229, 165, 165);
+  font-family:texto;
+  overflow: hidden;
+}
+
+h1, p {color:white}
+h1 {font-family:"FutbolLetras";
+    font-size:2em;
+    text-align:center;}
+
+/************************************************************/
+
+@media only screen and (max-width:800px){
+      #escudo, .mitad {width:100%;}
+      #plantilla {width:75%}
+      #temporada {width:75%}
+      .cuarto {width:46%;
+               margin:2%}
+}
+
+@media only screen and (max-width:500px){
+    .cuarto {width:90%;
+             margin:5%;}
+}
